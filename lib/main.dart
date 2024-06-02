@@ -34,18 +34,24 @@ class Login extends StatelessWidget {
                   ]
               ),
             ),
-            child: Padding(
-              padding: const EdgeInsets.only(top:60,left:60,right:60,bottom: 60),
-              child: Text(
-                "Hello\nSign in",
-                style: TextStyle(
-                  fontSize: 30,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.white,
-                ),
+            child:
+                Padding(
+                  padding: const EdgeInsets.only(top:80,left:60,right:60,bottom: 60),
+                  child: RichText(
+                    text: TextSpan(
+                      text: 'Join us ',
+                      style: TextStyle(
+                        fontSize: 25,
+                      ),
+                      children: const <TextSpan>[
+                        TextSpan(text: 'NOW', style: TextStyle(fontWeight: FontWeight.bold)),
+                        TextSpan(text: ' and you will not regret it!'),
+                      ],
+                    ),
+                  )
               ),
-            ),
           ),
+
           Padding(
             padding: const EdgeInsets.only(top: 200),
             child: Container(
@@ -91,7 +97,7 @@ class Login extends StatelessWidget {
                       ),
                     ),
                     SizedBox(
-                        height: 20,
+                        height: 10,
                     ),
                     Align(
                       alignment: Alignment.centerRight,
@@ -104,7 +110,7 @@ class Login extends StatelessWidget {
                       ),
                     ),
                     SizedBox(
-                      height: 20,
+                      height: 10,
                     ),
                     Container(
                       height: 50,
